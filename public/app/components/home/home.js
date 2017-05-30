@@ -1,12 +1,14 @@
 'use strict'
 
-angular.module('wildNoteApp')
+angular.module('wildNoteApp').component('home', {
+    templateUrl: '/app/components/home/home.html',
+    controller: Home
+})
 
-    .component('home', {
-        url: '/app/components/home/home.html',
-        controller: Home
-    })
+const notes = require("/home/apprenti/Documents/WCS/CHECKPOINT2/subject/mocks/notes.json"),
+    users = require("/home/apprenti/Documents/WCS/CHECKPOINT2/subject/mocks/users.json");
 
-function Home() {
+function Home($scope, $resource) {
+
+
 }
-

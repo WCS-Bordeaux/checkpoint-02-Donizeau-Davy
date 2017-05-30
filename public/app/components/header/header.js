@@ -1,17 +1,13 @@
 'use strict'
 
-angular.module('wildNoteApp')
-
-    .component('header', {
-        templateUrl: '/app/components/header/header.html',
-        controller: Header
-    })
+angular.module('wildNoteApp').component('header', {
+    templateUrl: '/app/components/header/header.html',
+    controller: Header
+})
 
 function Header() {
-    this.states = [
-        {
-            name: 'home',
-            displayName: 'Home'
-        }
-    ]
+    this.states = [{
+        name: 'home',
+        displayName: 'Home'
+    }]
 }
